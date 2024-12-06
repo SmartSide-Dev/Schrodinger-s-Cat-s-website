@@ -351,16 +351,13 @@ a:focus {
 
 /*end header section*/
 .slider_section {
-  background-image: url(../images/catsimg/sliderbg.jpg);
+  background-image: url(../images/catsimg/sidebarbg.png);
   background-size: cover;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   color: #ffffff;
   
-}
-.overlay{
-  background-color: rgba(0,0,0,0.5);
 }
 
 .slider_section #customCarousel1,
