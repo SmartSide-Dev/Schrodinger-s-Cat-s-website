@@ -304,9 +304,9 @@ a:focus {
 }
 
 .navbar-brand span {
-  font-weight: 700;
+  font-weight: 200;
   color: #2d2d2c;
-  font-size: 24px;
+  font-size: 35px;
 }
 
 .custom_nav-container {
@@ -339,23 +339,25 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 25px;
+  /* margin-right: 25px; */
   color: #000000;
 }
 
 .user_option a span {
   text-transform: uppercase;
   margin-right: 5px;
+  font-size: 24px;
 }
 
 /*end header section*/
 .slider_section {
-  background-image: url(../images/slider-bg.jpg);
+  background-image: url(../images/catsimg/sidebarbg.png);
   background-size: cover;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   color: #ffffff;
+  
 }
 
 .slider_section #customCarousel1,
@@ -413,18 +415,18 @@ a:focus {
 
 .slider_section .box .baby_detail .baby_text {
   padding: 25px 35px;
-  background-color: rgba(37, 37, 37, 0.9);
   margin-bottom: 15px;
+  justify-content:center;
 }
 
 .slider_section .box .baby_detail h2 {
   text-transform: uppercase;
 }
 
-.slider_section .box .care_detail {
+/* .slider_section .box .care_detail {
   -ms-flex-item-align: end;
       align-self: flex-end;
-}
+} */
 
 .slider_section .box .care_detail .care_text {
   padding: 25px 35px;
