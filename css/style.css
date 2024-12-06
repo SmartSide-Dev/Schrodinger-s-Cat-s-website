@@ -415,18 +415,18 @@ a:focus {
 
 .slider_section .box .baby_detail .baby_text {
   padding: 25px 35px;
-  background-color: rgba(37, 37, 37, 0.9);
   margin-bottom: 15px;
+  justify-content:center;
 }
 
 .slider_section .box .baby_detail h2 {
   text-transform: uppercase;
 }
 
-.slider_section .box .care_detail {
+/* .slider_section .box .care_detail {
   -ms-flex-item-align: end;
       align-self: flex-end;
-}
+} */
 
 .slider_section .box .care_detail .care_text {
   padding: 25px 35px;
