@@ -26,6 +26,7 @@ $('.team_carousel').owlCarousel({
     margin: 0,
     dots: true,
     autoplay: true,
+    autoplayTimeout: 2000,
     autoplayHoverPause: true,
     center: true,
     responsive: {
