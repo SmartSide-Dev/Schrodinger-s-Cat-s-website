@@ -1365,7 +1365,6 @@ body {
     outline: none;
     box-sizing: border-box;
     width: 100%; 
-    
 }
   textarea {
     resize: none;
@@ -1373,12 +1372,6 @@ body {
     width: 100%; 
   }
   
-  input:focus,
-  textarea:focus {
-    border-color: #60a917;
-    box-shadow: 0 0 4px rgba(130, 196, 25, 0.5);
-  }
-
   /* Icon Styling */
 .input-with-icon {
     position: relative;
@@ -1386,7 +1379,7 @@ body {
 
 .input-with-icon input, 
 .input-with-icon textarea {
-    padding-left: 40px; 
+    padding-left: 20px; 
 }
 
 .input-icon {
