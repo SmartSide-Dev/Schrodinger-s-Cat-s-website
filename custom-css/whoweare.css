@@ -58,7 +58,7 @@ body {
   
   /*header section*/
   .hero_area {
-    height: 100vh;
+    height: 84vh;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -80,6 +80,21 @@ body {
   
   .header_section {
     background-color: #ffffff;
+  }
+  
+  .header_section .container-fluid {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff; /* To ensure it's visible properly */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
   }
   
   .header_section .container-fluid {
@@ -348,130 +363,246 @@ body {
     margin-right: 5px;
     font-size: 24px;
   }
-  
-  /*end header section*/
-  .slider_section {
-    background-image: url(../images/catsimg/whoweare.png);
-    background-size: cover;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    color: #ffffff;
-    
+
+  /* Reset for slider */
+.carousel-inner .carousel-item {
+  text-align: center;
+}
+
+.baby_detail {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  color: #333;
+}
+
+.baby_text h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: Poppins;
+font-size: 64px;
+font-weight: 700;
+line-height: 96px;
+letter-spacing: 0.04em;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+
+.baby_detail a {
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Style custom dots */
+.custom-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.custom-dots li {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #555;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-dots li.active {
+  background-color: #007bff;
+}
+
+/* Style the green circular arrow buttons */
+/* Style the Left and Right Arrows */
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: #82c419; /* Green */
+  color: white;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.custom-arrow:hover {
+  background-color: rgba(100, 150, 30, 1);
+}
+
+/* Position the chevron buttons */
+.custom-arrow.custom-control-prev {
+  left: 10px;
+}
+
+.custom-arrow.custom-control-next {
+  right: 10px;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+  .custom-arrow {
+    font-size: 1.2rem;
+    height: 40px;
+    width: 40px;
   }
-  
-  .slider_section #customCarousel1,
-  .slider_section .carousel-inner,
-  .slider_section .carousel-item {
-    height: 100%;
+}
+
+@media (max-width: 576px) {
+  .custom-arrow {
+    font-size: 1rem;
+    height: 30px;
+    width: 30px;
   }
-  
-  .slider_section #customCarousel1 {
-    width: 100%;
-    height: 100%;
+}
+
+/* General Slider Section */
+.slider_section {
+  background-image: url(../images/catsimg/whoweare.png);
+  background-size: cover;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  color: #ffffff;
+}
+
+/* Ensure the carousel and its items take up full height */
+.slider_section #customCarousel1,
+.slider_section .carousel-inner,
+.slider_section .carousel-item {
+  height: 100%;
+}
+
+.slider_section #customCarousel1 {
+  width: 100%;
+  height: 100%;
+}
+
+/* Style for the box */
+.slider_section .box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Buttons inside the slider */
+.slider_section .box a {
+  display: inline-block;
+  background-color: #82c419;
+  color: #ffffff;
+  padding: 12px 45px;
+  border-radius: 0;
+  transition: all 0.3s;
+  border: none;
+  text-transform: uppercase;
+}
+
+.slider_section .box a:hover {
+  background-color: #649713;
+}
+
+.slider_section .box .baby_detail .baby_text {
+  padding: 25px 105px;
+  margin-bottom: 15px;
+  justify-content: center;
+  /* width:60%; */
+}
+
+
+
+/* Style for carousel indicators */
+.slider_section .carousel-indicators {
+  left: 45%;
+  /* right: initial; */
+  /* top: 45px; */
+  bottom: 0;
+  width: 150px;
+  height: 115px;
+  margin: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: flex;
+}
+.slider_section .carousel-indicators li {
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+  margin: 0 4px; /* Space between the dots */
+  border-radius: 50%;
+  background-color: #82c419; /* Green */
+  transition: background-color 0.3s ease
+}
+
+.slider_section .carousel-indicators li.active {
+  background-color: #252525;
+}
+
+/* Responsive Media Queries for Mobile */
+@media (max-width: 768px) {
+  .slider_section .baby_text h2 {
+    font-size: 1.8rem; /* Scale the text down */
+    padding: 10px;
   }
-  
-  .slider_section .box {
-    width: 100%;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+
+  .custom-arrow {
+    width: 30px;
+    height: 30px;
   }
-  
-  .slider_section .box a {
-    display: inline-block;
-    background-color: #82c419;
-    color: #ffffff;
-    padding: 12px 45px;
-    border-radius: 0;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-    border: none;
-    text-transform: uppercase;
-  }
-  
-  .slider_section .box a:hover {
-    background-color: #649713;
-  }
-  
-  .slider_section .box .baby_detail {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
-  
-  .slider_section .box .baby_detail .baby_text {
-    padding: 25px 35px;
-    margin-bottom: 15px;
-    justify-content:center;
-  }
-  
-  .slider_section .box .baby_detail h2 {
-    text-transform: uppercase;
-  }
-  
-  /* .slider_section .box .care_detail {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-  } */
-  
-  .slider_section .box .care_detail .care_text {
-    padding: 25px 35px;
-    background-color: rgba(37, 37, 37, 0.9);
-    margin-top: 15px;
-  }
-  
-  .slider_section .box .care_detail h2 {
-    text-transform: uppercase;
-  }
-  
-  .slider_section .carousel-indicators {
-    left: initial;
-    bottom: initial;
-    top: 45px;
-    right: 0;
-    width: 50px;
-    height: 115px;
-    margin: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  
+
   .slider_section .carousel-indicators li {
-    width: 20px;
-    height: 20px;
-    opacity: 1;
-    margin: 0;
-    border: none;
-    background-color: transparent;
-    background-color: #82c419;
+    width: 8px;
+    height: 8px;
   }
-  
-  .slider_section .carousel-indicators li.active {
-    background-color: #252525;
+}
+
+@media (max-width: 576px) {
+  .slider_section .baby_text h2 {
+    font-size: 1.5rem; /* Smaller text on very small devices */
   }
-  
+
+  .custom-arrow {
+    width: 25px;
+    height: 25px;
+  }
+
+  .slider_section .carousel-indicators li {
+    width: 6px;
+    height: 6px;
+  }
+
+  .slider_section .box {
+    padding: 0 10px;
+  }
+}
   .service_section {
     background-color: #252525;
     position: relative;
