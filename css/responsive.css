@@ -107,8 +107,19 @@
         height: auto;
         top: initial;
         bottom: -35px;
+        left: 0;
     }
 
+    .navbar-brand span{
+        font-size: 22px;
+    }
+    .slider_section .box .baby_detail .baby_text{
+        padding: 25px;
+    }
+
+    .baby_text h2{
+        line-height: normal;
+    }
     .slider_section .carousel-indicators li {
         margin: 0 2.5px;
     }
