@@ -928,39 +928,56 @@ text-decoration-skip-ink: none;
     margin: 75px 0;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-  }
-  
-  .team_section .box .img-box img {
-    width: 100%;
-  }
-  
-  .team_section .box .detail-box {
+    height: 200px; /* Adjust based on your design */
+    width: 300px; /* Adjust based on your design */
+    background-color: #f5f5f5; /* Add a background color */
+    border-radius: 10px; /* Optional for rounded corners */
+    overflow: hidden;
+}
+
+.team_section .box .img-box {
+    display: none; /* Hide the img-box */
+}
+
+.team_section .box .detail-box {
     background-color: #82c419;
-    padding: 15px;
+    padding: 20px; /* Increased padding for better spacing */
     border-radius: 10px;
     color: #ffffff;
-    margin-top: -45px;
     visibility: hidden;
     opacity: 0;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  
-  .team_section .box .detail-box h6 {
-    text-transform: uppercase;
-    font-size: 15px;
-  }
-  
-  .team_section .box .detail-box .social_box {
+    width: 100%; /* Take full width of the box */
+    height: 100%; /* Take full height of the box */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  
-  .team_section .box .detail-box .social_box a {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    flex-direction: column; /* Arrange content vertically */
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.team_section .box .detail-box h6 {
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 10px; /* Spacing below heading */
+}
+
+.team_section .box .detail-box .social_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.team_section .box .detail-box .social_box a {
     width: 30px;
     height: 30px;
     border-radius: 100%;
@@ -977,40 +994,100 @@ text-decoration-skip-ink: none;
     font-size: 18px;
     margin: 0 5px;
     color: #82c419;
-  }
-  
-  .team_section .team_carousel .owl-item.center .box {
+}
+
+.team_section .team_carousel .owl-item.center .box {
     opacity: 1;
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
-  }
-  
-  .team_section .team_carousel .owl-item.center .box .detail-box {
+}
+
+.team_section .team_carousel .owl-item.center .box .detail-box {
     visibility: visible;
     opacity: 1;
-  }
-  
-  .team_section .team_carousel .owl-dots {
+}
+
+.team_section .team_carousel .owl-dots {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  
-  .team_section .team_carousel .owl-dots .owl-dot {
+}
+
+.team_section .team_carousel .owl-dots .owl-dot {
     width: 20px;
     height: 20px;
     margin: 0 5px;
     background-color: #252525;
     outline: none;
-  }
-  
-  .team_section .team_carousel .owl-dots .owl-dot.active {
+}
+
+.team_section .team_carousel .owl-dots .owl-dot.active {
     background-color: #82c419;
-  }
+}
+
   
+/* Model Section */
+.model_section {
+  display:flex;
+  height: 80vh;
+  background-color: #f9f9f9;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Header */
+.model_section h2 {
+  font-size: 2rem;
+  padding-bottom: 150px;
+  color: #2e7d32;
+  font-family: Poppins;
+font-size: 66px;
+font-weight: 300;
+line-height: 32px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+
+/* Owl Carousel Wrapper */
+.model_carousel .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 250px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: #a8e063; /* Greenish box */
+  color: black;
+  font-size: 16px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+/* Add hover effect */
+.model_carousel .box:hover {
+  transform: translateY(-5px);
+}
+
+/* Carousel Dots - Custom Styling */
+.model_section .carousel-indicators {
+  display: none;
+}
+
+
   /* contact section */
   .contact_section .heading_container {
     margin-bottom: 25px;
