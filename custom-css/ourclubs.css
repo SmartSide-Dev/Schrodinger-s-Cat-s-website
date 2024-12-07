@@ -1333,6 +1333,42 @@ body {
     margin: 30px 0;
 }
 
+ .button-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  padding-top: 80px;
+  padding-bottom: 150px;
+
+}
+
+.custom-button {
+  display: inline-block; 
+  text-decoration: none; 
+  font-size: 16px;
+  font-weight: bold;
+  color: #82c419; 
+  background-color: transparent; 
+  border: 2px solid #82c419; 
+  padding: 10px 20px; 
+  border-radius: 4px; 
+  cursor: pointer;
+  transition: all 0.3s ease; 
+  outline: none; 
+}
+
+.custom-button:focus {
+  outline: none; 
+  box-shadow: 0 0 8px #8bc34a; 
+}
+
+.custom-button:hover {
+  background-color: #82c419; 
+  color: #fff; 
+}
+
+
+
 /* Responsive Design */
 @media (max-width: 767px) {
     .vision-mission {
@@ -1349,7 +1385,7 @@ body {
 
     .content-text {
         font-size: 21px;
-        text-align: left; /* Change to left alignment on small screens */
+        text-align: left; 
         padding-top: 0px;
     }
 
@@ -1357,11 +1393,20 @@ body {
         height: 1px;
     }
 
-    /* Stack content vertically for mobile */
     .content-item {
         flex-direction: column;
-        align-items: flex-start; /* Align content items to the left on small screens */
+        align-items: flex-start; 
     }
+    .button-container {
+      padding-top: 40px; 
+      padding-bottom: 80px; 
+  }
+
+  .custom-button {
+      font-size: 14px; 
+      padding: 8px 16px; 
+      border-radius: 3px; 
+  }
 }
 
  /*# sourceMappingURL=style.css.map */
