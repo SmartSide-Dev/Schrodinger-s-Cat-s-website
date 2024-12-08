@@ -565,6 +565,7 @@ text-decoration-skip-ink: none;
   background-color: #252525;
 }
 
+
 /* Responsive Media Queries for Mobile */
 @media (max-width: 768px) {
   .slider_section .baby_text h2 {
@@ -1033,9 +1034,16 @@ text-decoration-skip-ink: none;
 .model_section {
   display:flex;
   height: 80vh;
-  background-color: #f9f9f9;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+}
+.model-title {
+  font-size: 64px;
+  font-weight: 300;
+  color: #82c419;
+  text-align: center;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .container {
@@ -1044,20 +1052,6 @@ text-decoration-skip-ink: none;
   padding: 0 15px;
 }
 
-/* Header */
-.model_section h2 {
-  font-size: 2rem;
-  padding-bottom: 150px;
-  color: #2e7d32;
-  font-family: Poppins;
-font-size: 66px;
-font-weight: 300;
-line-height: 32px;
-text-align: center;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-
-}
 
 /* Owl Carousel Wrapper */
 .model_carousel .box {
@@ -1065,16 +1059,20 @@ text-decoration-skip-ink: none;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  width: 250px;
-  height: 300px;
+  width: 245px;
+  height: 250px;
   margin: 0 auto;
-  background-color: #a8e063; /* Greenish box */
+  background-color: #82C419; /* Greenish box */
   color: black;
   font-size: 16px;
-  border-radius: 8px;
+  border-radius: 20px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
   transition: transform 0.3s ease;
+}
+.model_carousel .box p {
+  font-size: 30px;  /* Adjust the font size as needed */
+  color: #333;      /* Text color */
 }
 
 /* Add hover effect */
@@ -1447,7 +1445,6 @@ text-decoration-skip-ink: none;
   /* about section */
   .about-us {
     padding: 80px 0;
-    background-color: #f8f9fa;
   }
   
   .about-image img {
