@@ -541,6 +541,7 @@ body {
     font-size: 54px;
     font-weight: 300;
     margin-bottom: 15px;
+    padding-bottom: 20px;
   }
   
   .our-programmes .events-gallery, .our-programmes .happening-gallery {
@@ -674,6 +675,71 @@ body {
     margin: 0 auto;
     max-width: 700px;
     padding-top: 40px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  padding-top: 80px;
+  padding-bottom: 100px;
+
+}
+
+.custom-button {
+  display: inline-block; 
+  text-decoration: none; 
+  font-size: 16px;
+  font-weight: bold;
+  color: #82c419; 
+  background-color: transparent; 
+  border: 2px solid #82c419; 
+  padding: 10px 20px; 
+  border-radius: 4px; 
+  cursor: pointer;
+  transition: all 0.3s ease; 
+  outline: none; 
+}
+
+.custom-button:focus {
+  outline: none; 
+  box-shadow: 0 0 8px #8bc34a; 
+}
+
+.custom-button:hover {
+  background-color: #82c419; 
+  color: #fff; 
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px); 
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0); 
+}
+
+@media screen and (max-width: 767px) {
+  .sub-title {
+    font-size: 1.5rem; /* Adjust the title size */
+  }
+
+  .description {
+    font-size: 0.9rem; /* Reduce description size slightly */
+  }
+
+  iframe {
+    width: 100%; /* Allow the video to scale down */
+    height: 300px;
+    max-width: none; /* Remove max-width for full responsiveness */
+  }
+
+  .custom-button {
+    font-size: 0.9rem; /* Reduce button size slightly */
+    padding: 8px 16px;
+  }
 }
   
 
