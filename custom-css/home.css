@@ -1071,8 +1071,8 @@ text-decoration-skip-ink: none;
   transition: transform 0.3s ease;
 }
 .model_carousel .box p {
-  font-size: 30px;  /* Adjust the font size as needed */
-  color: #333;      /* Text color */
+  font-size: 30px;  
+  color: #333;     
 }
 
 /* Add hover effect */
@@ -1509,7 +1509,7 @@ text-decoration-skip-ink: none;
 }
 
 .content-item {
-    margin-bottom: 50px; /* Added extra spacing between Vision and Mission */
+    margin-bottom: 50px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1520,16 +1520,16 @@ text-decoration-skip-ink: none;
     font-weight: 200;
     color: #000;
     margin-bottom: 95px;
-    text-align: left; /* Align titles to the left */
-    flex: 1; /* Allow the title to take up available space */
+    text-align: left; 
+    flex: 1; 
 }
 
 .content-text {
     font-size: 20px;
     line-height: 1.8;
     color: #555;
-    flex: 2; /* Content takes more space */
-    text-align: left; /* Align content to the right */
+    flex: 2; 
+    text-align: left; 
 }
 
 .divider {
@@ -1593,7 +1593,7 @@ text-decoration-skip-ink: none;
 .testimonial-stars {
   font-size: 1.5rem;
   margin-bottom: 15px;
-  color: #ffd700; /* Gold stars */
+  color: #ffd700; 
 }
 
 .testimonial-text {
@@ -1680,7 +1680,7 @@ text-decoration-skip-ink: none;
 
     .content-text {
         font-size: 21px;
-        text-align: left; /* Change to left alignment on small screens */
+        text-align: left; 
     }
 
     .divider {
@@ -1690,7 +1690,7 @@ text-decoration-skip-ink: none;
     /* Stack content vertically for mobile */
     .content-item {
         flex-direction: column;
-        align-items: flex-start; /* Align content items to the left on small screens */
+        align-items: flex-start; 
     }
 }
 
@@ -1804,7 +1804,7 @@ textarea {
 }
 
 .contact-text {
-  flex: 1;  /* Take up remaining space */
+  flex: 1;  
   display: flex;
   justify-content: center;
   align-items: center;
