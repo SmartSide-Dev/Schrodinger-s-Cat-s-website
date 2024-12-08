@@ -1541,7 +1541,7 @@ text-decoration-skip-ink: none;
 /* Section Styling */
 .testimonials-section {
   text-align: center;
-  padding: 40px 20px;
+  padding: 40px 0;
   background-color: #fff;
 }
 
@@ -1565,10 +1565,8 @@ text-decoration-skip-ink: none;
 
 .testimonial-card {
   position: relative;
-  max-width: 800px;
   width: 100%;
   overflow: hidden;
-  border-radius: 8px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -1615,9 +1613,16 @@ text-decoration-skip-ink: none;
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   transform: translateY(-50%);
+  gap: 100px;
+}
+@media (max-width: 768px) {
+  .testimonial-arrows {
+    justify-content: space-between;
+    gap: 50px;
+  }
 }
 
 .arrow {
