@@ -9,17 +9,6 @@ function closeNav() {
     $(".menu_btn-style").fadeOut();
 }
 
-
-// get current year
-
-function displayYear() {
-    var d = new Date();
-    var currentYear = d.getFullYear();
-    document.querySelector("#displayYear").innerHTML = currentYear;
-}
-displayYear();
-
-
 // owl carousel slider js
 $('.team_carousel').owlCarousel({
     loop: true,
