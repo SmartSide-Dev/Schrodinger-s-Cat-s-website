@@ -921,6 +921,11 @@ text-decoration-skip-ink: none;
 color: #82C419;
 
   }
+  @media (max-width: 768px) {
+    .team_section .heading_container h2 {
+      font-size: 40px;
+    }
+  }
   
   .team_section .box {
     display: -webkit-box;
@@ -1076,7 +1081,6 @@ text-decoration-skip-ink: none;
 color: #82C419;
 }
 
-
 /* advisory section */
 .advisory_section .heading_container h2 {
   margin-bottom: 25px;
@@ -1090,6 +1094,16 @@ text-decoration-skip-ink: none;
 color: #82C419;
 
 }
+@media screen and (max-width: 768px) {
+  #supporters .heading_container h2{
+    font-size: 40px;
+  }
+  .advisory_section .heading_container h2{
+    font-size: 40px;
+  }
+  
+}
+
 
 .advisory_section .box {
   display: -webkit-box;
