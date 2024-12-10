@@ -173,45 +173,7 @@ text-decoration-skip-ink: none;
   right: 10px;
 }
 
-/* Responsive Styles for Mobile */
-@media (max-width: 768px) {
-  .custom-arrow {
-    font-size: 1.2rem;
-    height: 40px;
-    width: 40px;
-  }
-  .overlay-title {
-    font-size: 30px;
-    top: 20%;
-  }
 
-  .overlay-content {
-    top: 15%;
-    right: 2%;
-  }
-
-  .overlay a {
-    font-size: 22px;
-    padding: 10px;
-  }
-
-  .menu_btn-style{
-    top: 15px;
-    left: 20px;
-  }
-
- 
-  
-
-}
-
-@media (max-width: 576px) {
-  .custom-arrow {
-    font-size: 1rem;
-    height: 30px;
-    width: 30px;
-  }
-}
 
   
   /* General Slider Section */

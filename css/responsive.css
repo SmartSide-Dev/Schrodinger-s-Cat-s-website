@@ -213,3 +213,11 @@
     }
 
 }
+
+@media (max-width: 576px) {
+    .custom-arrow {
+      font-size: 1rem;
+      height: 30px;
+      width: 30px;
+    }
+  }
