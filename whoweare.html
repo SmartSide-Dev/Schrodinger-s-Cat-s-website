@@ -19,6 +19,8 @@
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link href="bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
   <!-- fonts awesome style -->
   <link href="css/font-awesome.min.css" rel="stylesheet" />
   <!-- fonts style -->
@@ -58,9 +60,9 @@
       </div>
     </div>
   </div>
-   <!-- header section strats -->
-   <header class="header_section">
-    
+  <!-- header section strats -->
+  <header class="header_section">
+
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg custom_nav-container">
         <div class="custom_menu-btn">
@@ -71,19 +73,19 @@
           </button>
         </div>
         <div id="myNav" class="overlay">
-          
+
           <div class="menu_btn-style ">
             <button onclick="closeNav()">
               <span class="s-1"> </span>
               <span class="s-2"> </span>
               <span class="s-3"> </span>
             </button>
-          
+
           </div>
 
           <h1 class="overlay-title">Schrodinger's Cat's</h1>
           <div class="overlay-content">
-            
+
             <a class="" href="index.html"> HOME <span class="sr-only">(current)</span></a>
             <a class="active" href="whoweare.html"> WHO WE ARE ?</a>
             <a class="" href="researchandpublications.html"> RESEARCH AND PUBLICATIONS </a>
@@ -108,20 +110,20 @@
       </nav>
     </div>
     <script>
-   document.addEventListener("DOMContentLoaded", () => {
-  const headerSection = document.querySelector(".header_section");
+      document.addEventListener("DOMContentLoaded", () => {
+        const headerSection = document.querySelector(".header_section");
 
-  window.addEventListener("scroll", () => {
-    // Check if user has scrolled down or at the very top
-    if (window.scrollY > 50) {
-      // If scrolled beyond threshold, make it fixed
-      headerSection.classList.add("fixed-header");
-    } else {
-      // Otherwise remove fixed behavior
-      headerSection.classList.remove("fixed-header");
-    }
-  });
-});
+        window.addEventListener("scroll", () => {
+          // Check if user has scrolled down or at the very top
+          if (window.scrollY > 50) {
+            // If scrolled beyond threshold, make it fixed
+            headerSection.classList.add("fixed-header");
+          } else {
+            // Otherwise remove fixed behavior
+            headerSection.classList.remove("fixed-header");
+          }
+        });
+      });
 
     </script>
   </header>
@@ -708,7 +710,7 @@
             <li><a href="#">Contact Us</a></li>
           </ul>
         </div>
-  
+
         <!-- Blogs Column -->
         <div class="col-md-3 col-sm-6 footer_item">
           <h5>Blogs</h5>
@@ -724,7 +726,7 @@
             <li><a href="#">Compliances</a></li>
           </ul>
         </div>
-  
+
         <!-- What We Do Column -->
         <div class="col-md-3 col-sm-6 footer_item">
           <h5>What We Do</h5>
@@ -736,7 +738,7 @@
             <li><a href="#">Excited About</a></li>
           </ul>
         </div>
-  
+
         <!-- Contact Us Column -->
         <div class="col-md-3 col-sm-6 footer_item">
           <h5>Connect With Us</h5>
@@ -761,8 +763,12 @@
       </p>
     </div>
   </footer>
-  
+
   <!-- footer section -->
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.js"></script>

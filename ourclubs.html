@@ -15,14 +15,18 @@
   <title>CLUBS | Schrodinger's Cat's</title>
 
   <!-- slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link href="bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
   <!-- fonts awesome style -->
   <link href="css/font-awesome.min.css" rel="stylesheet" />
   <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,500,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,500,700&display=swap"
+    rel="stylesheet" />
 
   <!-- Custom styles for this template -->
   <link href="custom-css/ourclubs.css" rel="stylesheet" />
@@ -57,9 +61,9 @@
       </div>
     </div>
   </div>
-   <!-- header section strats -->
-   <header class="header_section">
-    
+  <!-- header section strats -->
+  <header class="header_section">
+
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg custom_nav-container">
         <div class="custom_menu-btn">
@@ -70,19 +74,19 @@
           </button>
         </div>
         <div id="myNav" class="overlay">
-          
+
           <div class="menu_btn-style ">
             <button onclick="closeNav()">
               <span class="s-1"> </span>
               <span class="s-2"> </span>
               <span class="s-3"> </span>
             </button>
-          
+
           </div>
 
           <h1 class="overlay-title">Schrodinger's Cat's</h1>
           <div class="overlay-content">
-            
+
             <a class="" href="index.html"> HOME <span class="sr-only">(current)</span></a>
             <a class="" href="whoweare.html"> WHO WE ARE ?</a>
             <a class="" href="researchandpublications.html"> RESEARCH AND PUBLICATIONS </a>
@@ -107,139 +111,147 @@
       </nav>
     </div>
     <script>
-   document.addEventListener("DOMContentLoaded", () => {
-  const headerSection = document.querySelector(".header_section");
+      document.addEventListener("DOMContentLoaded", () => {
+        const headerSection = document.querySelector(".header_section");
 
-  window.addEventListener("scroll", () => {
-    // Check if user has scrolled down or at the very top
-    if (window.scrollY > 50) {
-      // If scrolled beyond threshold, make it fixed
-      headerSection.classList.add("fixed-header");
-    } else {
-      // Otherwise remove fixed behavior
-      headerSection.classList.remove("fixed-header");
-    }
-  });
-});
+        window.addEventListener("scroll", () => {
+          // Check if user has scrolled down or at the very top
+          if (window.scrollY > 50) {
+            // If scrolled beyond threshold, make it fixed
+            headerSection.classList.add("fixed-header");
+          } else {
+            // Otherwise remove fixed behavior
+            headerSection.classList.remove("fixed-header");
+          }
+        });
+      });
 
     </script>
   </header>
   <!-- end header section -->
 
-   <!-- Reach Impact -->
-   <section class="reach-impact">
+  <!-- Reach Impact -->
+  <section class="reach-impact">
     <div class="container">
-        <h2 class="section-title">OUR CLUBS</h2>
+      <h2 class="section-title">OUR CLUBS</h2>
+      <hr class="divider">
+      <div class="content-block">
+        <!-- Reach Section -->
+        <div class="content-item fade-in">
+          <h3 class="content-title">Debate Club</h3>
+          <p class="content-text">
+            Our Debate Club is a platform for students to refine their ideas, challenge each other’s viewpoints, and
+            engage in healthy discourse. It’s where research findings come to life through spirited discussion.</p>
+        </div>
         <hr class="divider">
-        <div class="content-block">
-            <!-- Reach Section -->
-            <div class="content-item fade-in">
-                <h3 class="content-title">Debate Club</h3>
-                <p class="content-text">
-                    Our Debate Club is a platform for students to refine their ideas, challenge each other’s viewpoints, and engage in healthy discourse. It’s where research findings come to life through spirited discussion.</p>
-            </div>
-            <hr class="divider">
-            <!-- Impact Section -->
-            <div class="content-item fade-in">
-                <h3 class="content-title">Art Club</h3>
-                <p class="content-text">
-                    This club fosters creative expression, allowing students to explore societal themes through visual art, literature, and performance, merging creativity with awareness.</p>
-            </div>
-            <hr class="divider">
-            <!-- Impact Section -->
-            <div class="content-item fade-in">
-                <h3 class="content-title">Social Club</h3>
-                <p class="content-text">
-                    The Social Club promotes community involvement, enabling students to work on projects that directly benefit their surroundings and develop empathy, leadership, and teamwork skills.</p>
-            </div>
-            <hr class="divider">
-            <!-- Impact Section -->
-            <div class="content-item fade-in">
-                <h3 class="content-title">Travel Club</h3>
-                <p class="content-text">
-                    Our Travel Club organizes educational trips, providing students with hands-on learning experiences and insights into different cultures and societal structures.</p>
-            </div>
-            <div class="button-container">
-              <a href="https://example.com" class="custom-button">Join Our Clubs Now!</a>
-            </div>
+        <!-- Impact Section -->
+        <div class="content-item fade-in">
+          <h3 class="content-title">Art Club</h3>
+          <p class="content-text">
+            This club fosters creative expression, allowing students to explore societal themes through visual art,
+            literature, and performance, merging creativity with awareness.</p>
         </div>
-    </div>
-</section>
-
-<!-- End Reach impact -->
-
- 
-<footer class="footer_section">
-  <div class="container">
-    <div class="row">
-      <!-- About Us Column -->
-      <div class="col-md-3 col-sm-6 footer_item">
-        <h5>About Us</h5>
-        <ul>
-          <li><a href="#">Overview</a></li>
-          <li><a href="#">Our Philosophy</a></li>
-          <li><a href="#">Our Journey</a></li>
-          <li><a href="#">Governance</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Stories Of Dvara</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </div>
-
-      <!-- Blogs Column -->
-      <div class="col-md-3 col-sm-6 footer_item">
-        <h5>Blogs</h5>
-        <ul>
-          <li><a href="#">Latest Updates</a></li>
-          <li><a href="#">Media</a></li>
-          <li><a href="#">Media Kit</a></li>
-        </ul>
-        <h5 class="spacer">Terms And Policy</h5>
-        <ul>
-          <li><a href="#">Terms Of Use</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Compliances</a></li>
-        </ul>
-      </div>
-
-      <!-- What We Do Column -->
-      <div class="col-md-3 col-sm-6 footer_item">
-        <h5>What We Do</h5>
-        <ul>
-          <li><a href="#">Dvara Venture Studio</a></li>
-          <li><a href="#">Our Investments</a></li>
-          <li><a href="#">Our Accelerator</a></li>
-          <li><a href="#">Policy Research</a></li>
-          <li><a href="#">Excited About</a></li>
-        </ul>
-      </div>
-
-      <!-- Contact Us Column -->
-      <div class="col-md-3 col-sm-6 footer_item">
-        <h5>Connect With Us</h5>
-        <div class="social_icons">
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-youtube"></i></a>
-          <a href="#"><i class="fa fa-linkedin"></i></a>
-          <a href="#"><i class="fa fa-instagram"></i></a>
+        <hr class="divider">
+        <!-- Impact Section -->
+        <div class="content-item fade-in">
+          <h3 class="content-title">Social Club</h3>
+          <p class="content-text">
+            The Social Club promotes community involvement, enabling students to work on projects that directly benefit
+            their surroundings and develop empathy, leadership, and teamwork skills.</p>
         </div>
-        <h5 class="spacer">Contact Us</h5>
-        <a class="contact_button" href="#">Contact Now</a>
+        <hr class="divider">
+        <!-- Impact Section -->
+        <div class="content-item fade-in">
+          <h3 class="content-title">Travel Club</h3>
+          <p class="content-text">
+            Our Travel Club organizes educational trips, providing students with hands-on learning experiences and
+            insights into different cultures and societal structures.</p>
+        </div>
+        <div class="button-container">
+          <a href="https://example.com" class="custom-button">Join Our Clubs Now!</a>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="footer_bottom">
-    <p>
-      &copy; Copyrights 2024 Schrödinger's Cat's. All Rights Reserved.
-    </p>
-    <p>
-      Designed & Develped by <a href="https://www.smartside.in/" target="_blank">SmartSide</a> with 💛.
-    </p>
-  </div>
-</footer>
+  </section>
 
-<!-- footer section -->
+  <!-- End Reach impact -->
+
+
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <!-- About Us Column -->
+        <div class="col-md-3 col-sm-6 footer_item">
+          <h5>About Us</h5>
+          <ul>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Our Philosophy</a></li>
+            <li><a href="#">Our Journey</a></li>
+            <li><a href="#">Governance</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Stories Of Dvara</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Blogs Column -->
+        <div class="col-md-3 col-sm-6 footer_item">
+          <h5>Blogs</h5>
+          <ul>
+            <li><a href="#">Latest Updates</a></li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">Media Kit</a></li>
+          </ul>
+          <h5 class="spacer">Terms And Policy</h5>
+          <ul>
+            <li><a href="#">Terms Of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Compliances</a></li>
+          </ul>
+        </div>
+
+        <!-- What We Do Column -->
+        <div class="col-md-3 col-sm-6 footer_item">
+          <h5>What We Do</h5>
+          <ul>
+            <li><a href="#">Dvara Venture Studio</a></li>
+            <li><a href="#">Our Investments</a></li>
+            <li><a href="#">Our Accelerator</a></li>
+            <li><a href="#">Policy Research</a></li>
+            <li><a href="#">Excited About</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Us Column -->
+        <div class="col-md-3 col-sm-6 footer_item">
+          <h5>Connect With Us</h5>
+          <div class="social_icons">
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+          </div>
+          <h5 class="spacer">Contact Us</h5>
+          <a class="contact_button" href="#">Contact Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer_bottom">
+      <p>
+        &copy; Copyrights 2024 Schrödinger's Cat's. All Rights Reserved.
+      </p>
+      <p>
+        Designed & Develped by <a href="https://www.smartside.in/" target="_blank">SmartSide</a> with 💛.
+      </p>
+    </div>
+  </footer>
+
+  <!-- footer section -->
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.js"></script>
