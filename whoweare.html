@@ -56,9 +56,9 @@
       </div>
     </div>
   </div>
-  <!-- header section strats -->
-  <header class="header_section">
-
+   <!-- header section strats -->
+   <header class="header_section">
+    
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg custom_nav-container">
         <div class="custom_menu-btn">
@@ -69,21 +69,26 @@
           </button>
         </div>
         <div id="myNav" class="overlay">
+          
           <div class="menu_btn-style ">
             <button onclick="closeNav()">
               <span class="s-1"> </span>
               <span class="s-2"> </span>
               <span class="s-3"> </span>
             </button>
+          
           </div>
+
+          <h1 class="overlay-title">Schrodinger's Cat's</h1>
           <div class="overlay-content">
+            
             <a class="active" href="index.html"> HOME <span class="sr-only">(current)</span></a>
             <a class="" href="whoweare.html"> WHO WE ARE ?</a>
-            <a class="" href="why.html"> RESEARCH AND PUBLICATIONS </a>
-            <a class="" href="team.html"> OUR PROGRAMMES </a>
-            <a class="" href="testimonial.html"> CLUBS </a>
-            <a class="" href="contact.html"> CAREERS </a>
-            <a class="" href="contact.html"> CONTACT US </a>
+            <a class="" href="researchandpublications.html"> RESEARCH AND PUBLICATIONS </a>
+            <a class="" href="ourprogrammes.html"> OUR PROGRAMMES </a>
+            <a class="" href="ourclubs.html"> CLUBS </a>
+            <a class="" href="careers.html"> CAREERS </a>
+            <a class="" href="contactus.html"> CONTACT US </a>
           </div>
         </div>
         <a class="navbar-brand responsive-title" href="index.html">
@@ -101,25 +106,24 @@
       </nav>
     </div>
     <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const headerSection = document.querySelector(".header_section");
+   document.addEventListener("DOMContentLoaded", () => {
+  const headerSection = document.querySelector(".header_section");
 
-        window.addEventListener("scroll", () => {
-          // Check if user has scrolled down or at the very top
-          if (window.scrollY > 50) {
-            // If scrolled beyond threshold, make it fixed
-            headerSection.classList.add("fixed-header");
-          } else {
-            // Otherwise remove fixed behavior
-            headerSection.classList.remove("fixed-header");
-          }
-        });
-      });
+  window.addEventListener("scroll", () => {
+    // Check if user has scrolled down or at the very top
+    if (window.scrollY > 50) {
+      // If scrolled beyond threshold, make it fixed
+      headerSection.classList.add("fixed-header");
+    } else {
+      // Otherwise remove fixed behavior
+      headerSection.classList.remove("fixed-header");
+    }
+  });
+});
 
     </script>
   </header>
   <!-- end header section -->
-
 
   <div class="hero_area">
     <!-- slider section -->

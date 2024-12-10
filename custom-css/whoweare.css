@@ -97,10 +97,7 @@ body {
     transition: all 0.2s ease;
   }
   
-  .header_section .container-fluid {
-    padding-right: 25px;
-    padding-left: 25px;
-  }
+  
   
   .contact_nav_container {
     background-color: #82c419;
@@ -161,8 +158,9 @@ body {
   
   .menu_btn-style {
     position: fixed;
-    left: 22px;
-    top: 15px;
+    left: 35px;
+    top: 50px;
+    z-index: 2;
   }
   
   .menu_btn-style button {
@@ -221,7 +219,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgba(130, 196, 25, 0.95);
+    background-color: #82C419;
     overflow-x: hidden;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -233,35 +231,52 @@ body {
     right: 30px;
   }
   
+/* Title at the top of the overlay */
+.overlay-title {
+  position: relative;
+  top: 10%; /* Adjust for spacing from the top */
+  font-size: 35px;
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+  margin: 0;
+}
   .overlay a {
     display: inline-block;
-    padding: 10px 15px;
+    padding: 15px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 35px;
     text-transform: uppercase;
     color: #ffffff;
-    margin: 10px 0;
     display: block;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    border: 1.5px solid #ffffff;
     border-radius: 5px;
-    width: 190px;
+    width: auto;
+    letter-spacing: 2px;
+    font-family: Poppins;
+    font-weight: 700;
+    text-align: right;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
   }
   
   .overlay a:hover, .overlay a.active {
+    
     border-color: transparent;
-    background-color: #ffffff;
     color: #000000;
   }
   
-  .menu_btn-style {
-    display: none;
+  .overlay a:hover{
+    letter-spacing: 10px;
   }
+ 
   
   .overlay-content {
     position: relative;
-    top: 20%;
+    top: 10%;
+    right: 30px;
     width: 100%;
     text-align: center;
     margin-top: 30px;
@@ -272,11 +287,14 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: flex-end;
+        -ms-flex-align: flex-end;
+            align-items: flex-end;
   }
   
+  .menu_btn-style {
+    display: none;
+  }
   .menu_width {
     width: 100%;
   }
@@ -326,7 +344,7 @@ body {
   
   .custom_nav-container {
     z-index: 99999;
-    padding: 25px 0;
+    /* padding: 25px 0; */
   }
   
   .custom_nav-container .navbar-toggler {
@@ -363,7 +381,8 @@ body {
     margin-right: 5px;
     font-size: 24px;
   }
-
+  
+  /*end header section*/
   /* Reset for slider */
 .carousel-inner .carousel-item {
   text-align: center;

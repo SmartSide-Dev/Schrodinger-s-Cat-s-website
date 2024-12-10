@@ -39,77 +39,98 @@
 </head>
 
 <body class="sub_page">
-  <div class="hero_area">
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="contact_nav_container">
-        <div class="container">
-          <div class="contact_nav">
-            <a href="">
-              <i class="fa fa-map-marker" aria-hidden="true"></i>
-              <span>
-                Address : wisigaton lpusm loram
-              </span>
-            </a>
-            <a href="">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-              <span>
-                Email : demo@gmail.com
-              </span>
-            </a>
-            <a href="">
-              <i class="fa fa-phone" aria-hidden="true"></i>
-              <span>
-                Phone Call : +01 123455678990
-              </span>
-            </a>
-          </div>
-        </div>
+  <div class="contact_nav_container">
+    <div class="container">
+      <div class="contact_nav">
+        <a href="">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <span>
+            Address : wisigaton lpusm loram
+          </span>
+        </a>
+        <a href="">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <span>
+            Email : demo@gmail.com
+          </span>
+        </a>
+        <a href="">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          <span>
+            Phone Call : +01 123455678990
+          </span>
+        </a>
       </div>
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container">
-          <div class="custom_menu-btn">
-            <button onclick="openNav()">
+    </div>
+  </div>
+   <!-- header section strats -->
+   <header class="header_section">
+    
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <div class="custom_menu-btn">
+          <button onclick="openNav()">
+            <span class="s-1"> </span>
+            <span class="s-2"> </span>
+            <span class="s-3"> </span>
+          </button>
+        </div>
+        <div id="myNav" class="overlay">
+          
+          <div class="menu_btn-style ">
+            <button onclick="closeNav()">
               <span class="s-1"> </span>
               <span class="s-2"> </span>
               <span class="s-3"> </span>
             </button>
+          
           </div>
-          <div id="myNav" class="overlay">
-            <div class="menu_btn-style ">
-              <button onclick="closeNav()">
-                <span class="s-1"> </span>
-                <span class="s-2"> </span>
-                <span class="s-3"> </span>
-              </button>
-            </div>
-            <div class="overlay-content">
-              <a class="active" href="index.html"> HOME <span class="sr-only">(current)</span></a>
-              <a class="" href="about.html"> WHO WE ARE ?</a>
-              <a class="" href="why.html"> RESEARCH AND PUBLICATIONS </a>
-              <a class="" href="cat's-ourprogrammes.html"> OUR PROGRAMMES </a>
-              <a class="" href="cat's-ourclubs.html"> CLUBS </a>
-              <a class="" href="cat's-careers.html"> CAREERS </a>
-              <a class="" href="cat's-contactus.html"> CONTACT US </a>
-            </div>
+
+          <h1 class="overlay-title">Schrodinger's Cat's</h1>
+          <div class="overlay-content">
+            
+            <a class="active" href="index.html"> HOME <span class="sr-only">(current)</span></a>
+            <a class="" href="whoweare.html"> WHO WE ARE ?</a>
+            <a class="" href="researchandpublications.html"> RESEARCH AND PUBLICATIONS </a>
+            <a class="" href="ourprogrammes.html"> OUR PROGRAMMES </a>
+            <a class="" href="ourclubs.html"> CLUBS </a>
+            <a class="" href="careers.html"> CAREERS </a>
+            <a class="" href="contactus.html"> CONTACT US </a>
           </div>
-          <a class="navbar-brand" href="index.html">
+        </div>
+        <a class="navbar-brand responsive-title" href="index.html">
+          <span id="nav-brand" class="responsive-brand">
+            Schrodinger's Cat's
+          </span>
+        </a>
+        <div class="user_option">
+          <a href="">
             <span>
-                Schrodinger's Cat's
+              Contact Us
             </span>
           </a>
-          <div class="user_option">
-            <form class="form-inline">
-              <!-- <button class="btn  nav_search-btn" type="submit">
-                <i class="fa fa-search" aria-hidden="true"></i>
-              </button> -->
-            </form>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <!-- end header section -->
-  </div>
+        </div>
+      </nav>
+    </div>
+    <script>
+   document.addEventListener("DOMContentLoaded", () => {
+  const headerSection = document.querySelector(".header_section");
+
+  window.addEventListener("scroll", () => {
+    // Check if user has scrolled down or at the very top
+    if (window.scrollY > 50) {
+      // If scrolled beyond threshold, make it fixed
+      headerSection.classList.add("fixed-header");
+    } else {
+      // Otherwise remove fixed behavior
+      headerSection.classList.remove("fixed-header");
+    }
+  });
+});
+
+    </script>
+  </header>
+  <!-- end header section -->
 
   <section class="our-programmes">
     <div class="container">
