@@ -221,3 +221,43 @@
       width: 30px;
     }
   }
+
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 2rem;
+    }
+    .sub-title {
+      font-size: 1.5rem;
+    }
+    .events-gallery {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .event-card {
+      width: 100%;
+    }
+    .whats-happening iframe {
+      height: 250px;
+    }
+    .description {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .section-title {
+      font-size: 1.8rem;
+    }
+    .sub-title {
+      font-size: 1.2rem;
+    }
+    .description {
+      font-size: 0.8rem;
+    }
+    .custom-button {
+      font-size: 0.9rem;
+      padding: 8px 15px;
+    }
+  }
