@@ -29,7 +29,6 @@
         padding: 15px 0;
     }
 
-    .slider_section {}
 
     .wehave_section .box {
         align-items: center;
@@ -304,7 +303,7 @@
     opacity: 0;
     right: 15px;
     bottom: 15px;
-    z-index: 99999;
+    z-index: 2;
     background-color:#82c419;
     width: 40px;
     height: 40px;
