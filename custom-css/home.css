@@ -1470,7 +1470,7 @@ text-decoration-skip-ink: none;
   
   /* end info section */
   /* footer section*/
-  .footer_section {
+  /* .footer_section {
     background-color: #fdfdfe;
     text-align: center;
     color: #000000;
@@ -1484,7 +1484,7 @@ text-decoration-skip-ink: none;
   
   .footer_section p a {
     color: inherit;
-  }
+  } */
 
   /* about section */
   .about-us {
@@ -1918,7 +1918,7 @@ textarea {
 
  /* Footer Section Styling */
  .footer_section {
-  background-color: #1d1d1d;
+  background-color: #1A1C20;
   color: #b0b0b0;
   padding: 40px 0;
   font-family: Arial, sans-serif;
